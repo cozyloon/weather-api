@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TodayComponent } from './today/today.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodayComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
